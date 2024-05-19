@@ -23,10 +23,26 @@ public class ListaPacientes {
     public static Paciente buscarPorId(int id) {
         return pacientes.get(id);
     }
-    public static void alterarPorId(int id) {
+    public static Paciente alterarPorId(int id) {
+       Paciente pessoaNova = buscarPorId(id);
 
 
+        return pessoaNova;
          }
+
+//    peso: double;
+//
+//    altura: double;
+//
+//    pressão arterial: double;
+//
+//    frequência cardíaca: double;
+//
+//    dieta Alimentar: String.
+
+
+
+
     public static void listarPacientes() {
         if(pacientes.isEmpty()){
             System.out.println("lista vazia");

@@ -75,7 +75,21 @@ public class main {
         ListaPacientes.listarPacientes();
     }
     public static void telaAlterarInformacoes(Scanner scan){
-        System.out.println("altera info");
+        System.out.println("Digite o ID do paciente que deseja alterar as informações:");
+        int id = Integer.parseInt(scan.next());
+        ListaPacientes.alterarPorId(id);
+        System.out.println("Insira o novo peso: ");
+        ListaPacientes.alterarPorId(id).peso =scan.nextDouble();
+        System.out.println("Insira o novo altura: ");
+        ListaPacientes.alterarPorId(id).altura =scan.nextDouble();
+        System.out.println("Insira a nova PA: ");
+        ListaPacientes.alterarPorId(id).pressaoArterial =scan.nextDouble();
+        System.out.println("Insira o novo FA: ");
+        ListaPacientes.alterarPorId(id).freqCardiaca =scan.nextDouble();
+        System.out.println("Insira a nova dieta: ");
+        ListaPacientes.alterarPorId(id).DietaAlimentar =scan.next();
+
+
     }
     public static void telaMostrarInformacoes(Scanner scan){
         System.out.println("Digite o ID do paciente:");

@@ -26,6 +26,9 @@ public void informacoes(){
     System.out.println("Nome:" + this.nome);
     System.out.println("\nIdade:" + this.idade);
     System.out.println("\nAltura:" + this.altura);
+    System.out.println("\nPeso:" + this.peso);
+
+
     System.out.println("\nPA:" + this.pressaoArterial);
     System.out.println("\nFA:" + this.freqCardiaca);
     System.out.println("\nFA:" + this.DietaAlimentar);
