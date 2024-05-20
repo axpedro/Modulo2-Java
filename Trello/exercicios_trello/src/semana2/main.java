@@ -101,7 +101,10 @@ public class main {
     public static void telaRegistrarAtividadeFisica(Scanner scan){
         System.out.println("Digite o ID do paciente que deseja registrar a atividade:");
         int id = Integer.parseInt(scan.next());
-        System.out.println("registra atividade");
+        ListaPacientes.buscarPorId(id);
+
+        System.out.println("Digite o nome da atividade física para adicionar:");
+        ListaPacientes.buscarPorId(id).registroAtvFisica(scan.next());
     }
     public static void telaRemovePaciente(Scanner scan){
 

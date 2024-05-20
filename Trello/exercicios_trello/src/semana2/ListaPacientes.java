@@ -30,16 +30,6 @@ public class ListaPacientes {
         return pessoaNova;
          }
 
-//    peso: double;
-//
-//    altura: double;
-//
-//    pressão arterial: double;
-//
-//    frequência cardíaca: double;
-//
-//    dieta Alimentar: String.
-
 
 
 

@@ -11,7 +11,7 @@ public class Paciente { //classe paciente
     double pressaoArterial;
     double freqCardiaca;
     String DietaAlimentar;
-    ArrayList<String> atividadesFisicas;
+    ArrayList<String> atividadesFisicas = new ArrayList<>();
     double imc;
 
 
@@ -31,14 +31,14 @@ public void informacoes(){
 
     System.out.println("\nPA:" + this.pressaoArterial);
     System.out.println("\nFA:" + this.freqCardiaca);
-    System.out.println("\nFA:" + this.DietaAlimentar);
-    System.out.println("\nFA:" + this.atividadesFisicas);
+    System.out.println("\nDieta alimentar:" + this.DietaAlimentar);
+    System.out.println("\nLista de Atividades fisicas:" + this.atividadesFisicas);
     System.out.println("\nIMC:" + this.imc);
 
 
     }
     public void registroAtvFisica(String atividade){
-
+        //atividadesFisicas = new ArrayList<>();
         atividadesFisicas.add(atividade);
     }
 
