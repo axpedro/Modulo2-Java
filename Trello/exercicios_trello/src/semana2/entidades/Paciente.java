@@ -1,18 +1,18 @@
-package semana2;
+package semana2.entidades;
 
 import java.util.ArrayList;
 
 public class Paciente { //classe paciente
     //atributos da classe:
-    String nome;
-    int idade;
-    double peso;
-    double altura;
-    double pressaoArterial;
-    double freqCardiaca;
-    String DietaAlimentar;
-    ArrayList<String> atividadesFisicas = new ArrayList<>();
-    double imc;
+   public String nome;
+    public int idade;
+    public double peso;
+    public  double altura;
+    public   double pressaoArterial;
+    public  double freqCardiaca;
+    public   String DietaAlimentar;
+    public  ArrayList<String> atividadesFisicas = new ArrayList<>();
+    public  double imc;
 
 
 public double calculoIMC(double peso, double altura){

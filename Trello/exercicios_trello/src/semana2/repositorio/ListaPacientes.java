@@ -1,11 +1,13 @@
-package semana2;
+package semana2.repositorio;
+
+import semana2.entidades.Paciente;
 
 import java.util.ArrayList;
 
 public class ListaPacientes {
 
 
-    private static ArrayList<Paciente> pacientes;
+    public static ArrayList<Paciente> pacientes;
 
 
     static {

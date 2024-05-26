@@ -1,5 +1,8 @@
 package semana2;
 
+import semana2.entidades.Paciente;
+import semana2.repositorio.ListaPacientes;
+
 import java.util.Scanner;
 
 public class main {
