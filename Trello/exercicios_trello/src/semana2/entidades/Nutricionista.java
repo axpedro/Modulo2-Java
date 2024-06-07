@@ -24,5 +24,11 @@ public class Nutricionista  extends Funcionario{
     listaCertificados.add(certificado);
   }
 
+  public int getNumeroConsultas() {
+    return numeroConsultas;
+  }
 
+  public void setNumeroConsultas(int numeroConsultas) {
+    this.numeroConsultas = numeroConsultas;
+  }
 }

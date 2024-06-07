@@ -7,10 +7,10 @@ import java.time.LocalDate;
 
 public class Consulta {
 
-    Nutricionista nutricionista;
-    Paciente paciente;
-    LocalDate horaEData;
-    boolean consultaRealida;
+    public Nutricionista nutricionista;
+    public Paciente paciente;
+    public LocalDate horaEData;
+    public boolean consultaRealida;
 
 }
 

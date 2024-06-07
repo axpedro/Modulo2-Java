@@ -1,5 +1,6 @@
 package semana2;
 
+import semana2.entidades.Nutricionista;
 import semana2.entidades.Paciente;
 import semana2.repositorio.ListaPacientes;
 
@@ -10,7 +11,6 @@ public class main {
 
     public static void main(String[] args) {
         Scanner scan  = new Scanner(System.in);
-
         int opcao = -1;
         while(opcao != 0){
         System.out.println("""
