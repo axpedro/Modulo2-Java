@@ -44,6 +44,12 @@ public class main {
                 case 6:
                     telaRemovePaciente(scan);
                     break;
+                case 7:
+                    //cadastroFuncionario
+                case 8:
+                    //cadastroNutrionicsta
+                case 9:
+                    //criarConsulta
 
             }
 
