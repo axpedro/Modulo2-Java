@@ -37,7 +37,7 @@ public class ListaFuncionarios {
 
     public static void listarfuncionarios() {
         if(funcionarios.isEmpty()){
-            System.out.println("lista vazia");
+            System.out.println("lista de funcionários vazia");
         }
         else{
             System.out.println("Id  -  Nome");

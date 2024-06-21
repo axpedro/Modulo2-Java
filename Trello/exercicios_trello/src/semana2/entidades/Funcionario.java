@@ -5,17 +5,17 @@ public class Funcionario {
     private String Nome;
     private int Idade;
     private Endereco Endereco;
-    private double Salário;
+    private double Salario;
 
     public Funcionario() {
 
     }
 
-    public Funcionario(String nome, int idade, semana2.entidades.Endereco endereco, double salário) {
+    public Funcionario(String nome, int idade, semana2.entidades.Endereco endereco, double salario) {
         Nome = nome;
         Idade = idade;
         Endereco = endereco;
-        Salário = salário;
+        Salario = salario;
     }
 
     public String getNome() {
@@ -42,11 +42,11 @@ public class Funcionario {
         Endereco = endereco;
     }
 
-    public double getSalário() {
-        return Salário;
+    public double getSalario() {
+        return Salario;
     }
 
-    public void setSalário(double salário) {
-        Salário = salário;
+    public void setSalario(double salario) {
+        Salario = salario;
     }
 }

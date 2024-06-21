@@ -7,7 +7,7 @@ public class Endereco {
     private String Cidade;
     private int Número;
     private String CEP;
-
+    public Endereco(){}
     public Endereco(String logradouro, String estado, String cidade, int número, String CEP) {
         Logradouro = logradouro;
         Estado = estado;

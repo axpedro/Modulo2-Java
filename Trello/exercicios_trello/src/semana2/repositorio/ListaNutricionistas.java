@@ -3,6 +3,7 @@ package semana2.repositorio;
 import semana2.entidades.Nutricionista;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class ListaNutricionistas {
     
@@ -30,7 +31,11 @@ public class ListaNutricionistas {
             return nutricionistaNovo;
         }
 
-
+    public static Optional<Nutricionista> buscarNutricionistaPorNome(ArrayList<Nutricionista> nutricionistas, String nome) {
+        return nutricionistas.stream()
+                .filter(nutricionista -> nutricionista.getNome().equalsIgnoreCase(nome))
+                .findFirst();
+    }
 
 
         public static void listarnutricionistas() {
@@ -50,6 +55,8 @@ public class ListaNutricionistas {
             }
 
         }
+
+
 
 
     }

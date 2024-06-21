@@ -44,13 +44,14 @@ public class ListaConsultas {
             System.out.println("lista vazia");
         }
         else{
-            System.out.println("Id  -  Consulta:");
+
 
             for (Consulta consulta : consultas) {
-                System.out.println(
 
-                                consulta.nutricionista.getNome() + " - " + consulta.paciente.nome + " - "
-                        + consulta.horaEData
+                System.out.println( "Id da consulta: " + consultas.indexOf(consulta) + " \nNutricionista: " +
+
+                                consulta.nutricionista.getNome() + " - " + "Paciente: "+consulta.paciente.nome + " - "
+                        + "\nData e Hora da consulta:" + consulta.horaEData +"\n" + " Consulta realizada:" +consulta.consultaRealida
                 );
             }
 

@@ -3,15 +3,14 @@ package semana2.entidades;
 import java.util.ArrayList;
 
 public class Nutricionista  extends Funcionario{
-  private  ArrayList<String> listaCertificados;
+  private  ArrayList<String> listaCertificados =  new ArrayList<>();;
     private  int numeroConsultas;
     private int tempoXp;
 
-
-  public Nutricionista(String nome, int idade, semana2.entidades.Endereco endereco, double salário, ArrayList<String> listaCertificados, int numeroConsultas, int tempoXp) {
-    super(nome, idade, endereco, salário);
-    listaCertificados = new ArrayList<>();
-    this.listaCertificados = listaCertificados;
+public Nutricionista(){}
+  public Nutricionista(String nome, int idade, semana2.entidades.Endereco endereco, double salario, ArrayList<String> listaCertificados, int numeroConsultas, int tempoXp) {
+    super(nome, idade, endereco, salario);
+    this.listaCertificados = listaCertificados ;
     this.numeroConsultas = numeroConsultas;
     this.tempoXp = tempoXp;
   }
@@ -21,7 +20,25 @@ public class Nutricionista  extends Funcionario{
   }
 
   public void adicionaCertificacao(String certificado){
-    listaCertificados.add(certificado);
+
+
+  listaCertificados.add(certificado);
+  }
+
+  public int getTempoXp() {
+    return tempoXp;
+  }
+
+  public void setTempoXp(int tempoXp) {
+    this.tempoXp = tempoXp;
+  }
+
+  public ArrayList<String> getListaCertificados() {
+    return listaCertificados;
+  }
+
+  public void setListaCertificados(ArrayList<String> listaCertificados) {
+    this.listaCertificados = listaCertificados;
   }
 
   public int getNumeroConsultas() {
@@ -31,4 +48,7 @@ public class Nutricionista  extends Funcionario{
   public void setNumeroConsultas(int numeroConsultas) {
     this.numeroConsultas = numeroConsultas;
   }
+
+
+
 }
