@@ -15,8 +15,8 @@ import java.util.ArrayList;
 import java.util.Optional;
 import java.util.Scanner;
 
-import static semana2.repositorio.ListaNutricionistas.buscarNutricionistaPorNome;
-import static semana2.repositorio.ListaNutricionistas.nutricionistas;
+import static semana2.entidades.Nutricionista.VerificaAntesDoCadastro;
+import static semana2.repositorio.ListaNutricionistas.*;
 import static semana2.repositorio.ListaPacientes.buscarPacientePorNome;
 
 
@@ -193,8 +193,16 @@ public class main {
         Nutricionista nutri = new Nutricionista();
         System.out.println(nutri.getListaCertificados().size());
         System.out.println("Criação de Nutricionista:\n");
-        System.out.println("Insira o nome do Nutricionista");
-        nutri.setNome(scan.next());
+
+        String nomeNutricionista;
+        do {
+            System.out.println("Insira o nome do nutricionista:");
+            nomeNutricionista = scan.next();
+        } while (VerificaAntesDoCadastro(ListaNutricionistas.nutricionistas, nomeNutricionista));
+
+        nutri.setNome(nomeNutricionista);
+
+
         System.out.println("Insira a idade do Nutricionista");
         nutri.setIdade(scan.nextInt());
         System.out.println("Insira o salario do Nutricionista");
