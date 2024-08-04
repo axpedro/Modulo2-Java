@@ -1,8 +1,10 @@
 package semana2.repositorio;
 
+import semana2.entidades.Nutricionista;
 import semana2.entidades.Paciente;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 public class ListaPacientes {
 
@@ -32,7 +34,11 @@ public class ListaPacientes {
         return pessoaNova;
          }
 
-
+    public static Optional<Paciente> buscarPacientePorNome(ArrayList<Paciente> pacientes, String nome) {
+        return pacientes.stream()
+                .filter(paciente -> paciente.getNome().equalsIgnoreCase(nome))
+                .findFirst();
+    }
 
 
     public static void listarPacientes() {
